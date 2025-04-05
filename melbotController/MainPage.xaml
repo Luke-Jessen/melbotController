@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="melbotController.MainPage">
+
+    <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="2*" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="0.5*"/>
+
+        </Grid.RowDefinitions>
+    
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>    
+    
+            <Label            
+                Text="Video"
+                
+                Grid.ColumnSpan="2"            
+            />
+
+
+            <Slider
+                x:Name="left"                   
+                Maximum="255"
+                Minimum="-255"
+                Rotation="-90"
+                WidthRequest="200"                
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                
+                ValueChanged="left_ValueChanged"
+                DragCompleted="left_DragCompleted"
+                
+                Grid.Column="0"
+                Grid.Row="1"
+            />
+
+            <Label
+                x:Name="leftDisp"
+                VerticalOptions="Center"
+                HorizontalOptions="End"
+                
+                Grid.Column="0"
+                Grid.Row="1"
+            />
+
+            <Slider
+                x:Name="right"                   
+                Maximum="255"
+                Minimum="-255"
+                Rotation="-90"
+                WidthRequest="200"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                
+                ValueChanged="right_ValueChanged"
+                DragCompleted="right_DragCompleted"
+                
+                Grid.Column="1"
+                Grid.Row="1"
+            />
+            <Label
+                x:Name="rightDisp"
+                VerticalOptions="Center"
+                HorizontalOptions="End"
+                
+                Grid.Column="1"
+                Grid.Row="1"
+            />
+            <Entry
+                x:Name="IpPort"
+                VerticalOptions="Center"
+                HorizontalOptions="End"
+                
+                
+                Grid.Column="0"
+                Grid.Row="2"
+                
+                Completed="IP_Completed"
+            />
+
+    </Grid>
+
+    
+    
+</ContentPage>

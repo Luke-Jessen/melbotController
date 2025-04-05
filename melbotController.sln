@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "melbotController", "melbotController\melbotController.csproj", "{0DD1C3B8-9BD3-4402-8E8C-C50306E7FDFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DD1C3B8-9BD3-4402-8E8C-C50306E7FDFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD1C3B8-9BD3-4402-8E8C-C50306E7FDFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD1C3B8-9BD3-4402-8E8C-C50306E7FDFA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0DD1C3B8-9BD3-4402-8E8C-C50306E7FDFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD1C3B8-9BD3-4402-8E8C-C50306E7FDFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD1C3B8-9BD3-4402-8E8C-C50306E7FDFA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AE0F6D5-E0F5-4C0D-97B1-4EFC75E0F2B2}
+	EndGlobalSection
+EndGlobal

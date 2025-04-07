@@ -14,16 +14,16 @@
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="*" />
-    </Grid.ColumnDefinitions>    
-    
-            <Label            
-                Text="Video"
-                
-                Grid.ColumnSpan="2"            
-            />
+    </Grid.ColumnDefinitions>
+
+        <WebView
+            x:Name ="video" 
+            Grid.ColumnSpan="2"
+            
+        />
 
 
-            <Slider
+        <Slider
                 x:Name="left"                   
                 Maximum="100"
                 Minimum="-100"

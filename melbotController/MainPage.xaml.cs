@@ -1,6 +1,7 @@
 ﻿using System.Net.Sockets;
 using System.Text;
 using System.Net;
+using System.Diagnostics;
 
 
 namespace melbotController
@@ -66,6 +67,8 @@ namespace melbotController
 
             IPAddress broadcast = IPAddress.Parse(IP);
             ep = new IPEndPoint(broadcast, 5000);
+
+            video.Source = string.Format("http://{0}:8889/cam1", IP);
         }
 
 
@@ -77,6 +80,8 @@ namespace melbotController
             byte[] sendbuf = Encoding.ASCII.GetBytes(commands);
 
             sock.SendTo(sendbuf, ep);
+
+            //debug.Text = commands;
         }
 
 

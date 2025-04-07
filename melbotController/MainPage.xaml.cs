@@ -18,7 +18,7 @@ namespace melbotController
 
             sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
-            ep = new IPEndPoint(IPAddress.Parse("10.51.238.62"), 5000);
+            ep = new IPEndPoint(IPAddress.Parse("192.168.1.74"), 5000);
 
         }
 
@@ -28,7 +28,7 @@ namespace melbotController
         {
             leftDisp.Text = ((int)(left.Value)).ToString();
 
-            command[0] = ((int)(Math.Abs(left.Value))).ToString();
+            command[0] = ((int)(Math.Abs(left.Value))).ToString("D3");
 
             command[1]= left.Value < 0 ? "0" : "1";
 
@@ -45,7 +45,7 @@ namespace melbotController
         {
             rightDisp.Text = ((int)(right.Value)).ToString();
 
-            command[2] = ((int)(Math.Abs(right.Value))).ToString();
+            command[2] = ((int)(Math.Abs(right.Value))).ToString("D3");
 
             command[3] = right.Value < 0 ? "0" : "1";
 

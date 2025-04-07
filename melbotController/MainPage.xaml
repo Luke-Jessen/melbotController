@@ -19,7 +19,7 @@
         <WebView
             x:Name ="video" 
             Grid.ColumnSpan="2"
-            
+            Rotation="180"
         />
 
 
